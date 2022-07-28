@@ -34,7 +34,27 @@ public class Metodos {
     System.out.println("name.substring(4) = " + name.substring(1, 4)); //lfr, incluye el primer index el segundo "no"
     System.out.println("name.substring(4) = " + name.substring(name.length()-2)); //do, estrae los ultimos 2
 
+    /* .replace(), no muta el string original, se indica el char a cambiar */
+    String trabalengua = "trabalengua";
+    System.out.println("\ntrabalengua = " + trabalengua.replace("a", "."));
 
+    /* .indexOf(), retorna la primera posicion en que encuentre un char, si no existe arrojara un -1*/
+    System.out.println("trabalengua.indexOf() = " + trabalengua.indexOf('a'));
 
+    /* .lastIndexOf() retorna la primera posicion de un char pero revisando de derecha a izquierda , si no existe arrojara un -1*/
+    System.out.println("trabalengua.lastIndexOf('a') = " + trabalengua.lastIndexOf('a'));
+
+    /* .contains(), retorna un boolean true si encuentra, falso si no esta*/
+    System.out.println("trabalengua.contains(\"t\") = " + trabalengua.contains("t")); //true
+    
+    
+    /* .startWith() si comienza con un char o cadena indicada retornara true, sino false*/
+    System.out.println("trabalengua.startsWith(\"traba\") = " + trabalengua.startsWith("traba")); //true
+    
+    /* .endWith() lo mismo que startWith() pero lee de derecha a izquierda, devuelve true o false*/
+    System.out.println("trabalengua.endsWith(\"ua\") = " + trabalengua.endsWith("ua")); //true
+
+    /* .trim(), quitamos espacios en blancos en ambos lados, importante al trabajar con formularios */
+    System.out.println("  trabalengua    ".trim());
   }
 }
