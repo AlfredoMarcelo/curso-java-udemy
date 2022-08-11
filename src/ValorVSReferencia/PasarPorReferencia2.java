@@ -25,6 +25,8 @@ public class PasarPorReferencia2 {
     System.out.println("Despues de llamar al metodo test");
     System.out.println("persona.nombre = " + persona.leerNombre()); //pepo
     System.out.println("finaliza el metodo main con los datos modificados");
+
+
   }
 
   public static void test(Persona persona){
